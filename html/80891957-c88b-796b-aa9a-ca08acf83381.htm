@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>RotationMatrix Class</title><meta name="Title" content="RotationMatrix" /><meta name="Help.Id" content="T:Machina.Types.Geometry.RotationMatrix" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Machina.Types.Geometry" /><meta name="guid" content="80891957-c88b-796b-aa9a-ca08acf83381" /><meta name="Description" content="A class representing a 3x3 rotation matrix" /><meta name="tocFile" content="../toc/IDI.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Rotation<wbr />Matrix Class</h1><div class="summary">
+            A class representing a 3x3 rotation matrix
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="74cdaf10-aea3-c3c4-27fe-7db6c7a360b6.htm">Machina.Types.Geometry</a><br /><strong>Assembly:</strong> Machina (in Machina.dll) Version: 0.0.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">RotationMatrix</span> : <span class="identifier">Geometry</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="026a4b5c-74ee-7c65-0a2d-e1632f183d50.htm">Geometry</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">RotationMatrix</span></dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Constructors</h2><div id="IDAAEASection"><table id="ConstructorList" class="table is-hoverable"><tr><td><a href="d296ba39-2137-7323-d273-f0132b0f945d.htm">RotationMatrix<span id="LSTAD5BABFC_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td>
+            Create a 3x3 identity matrix representing no rotation.
+            </td></tr><tr><td><a href="1c128951-57b5-8dcc-8039-0f2dc3894b6b.htm">RotationMatrix(<span id="LSTAD5BABFC_1" data-languageSpecificText="cpp=array&lt;"></span>Double<span id="LSTAD5BABFC_2" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</a></td><td>
+            Create a 3x3 Rotation Matrix from it's constituent components. 
+            Elements of the rotation matrix, ordered in row to column way, 
+            i.e. r[2] is r13 (row 1 col 3), r[6] is r31, etc. 
+            </td></tr><tr><td><a href="18825304-c97e-8530-15b7-97daaa13e7ab.htm">RotationMatrix(RotationMatrix)</a></td><td>
+            Create a 3x3 Rotation Matrix as a shallow copy of another.
+            </td></tr><tr><td><a href="1d8d6b8b-d2a9-2c4b-27e4-7efeb240cd7b.htm">RotationMatrix(Vector, Vector)</a></td><td>
+            Create a RotationMatrix from two Vectors. 
+            This constructor will create the best-fit orthogonal 3x3 matrix 
+            respecting the direction of the X vector and the plane formed with the Y vector. 
+            The Z vector will be normal to this planes, and all vectors will be unitized. 
+            </td></tr><tr><td><a href="f9c84082-697f-aff5-4a69-064421ace80f.htm">RotationMatrix(Double, Double, Double, Double, Double, Double)</a></td><td>
+            Create a RotationMatrix from the components of two Vectors. 
+            This constructor will create the best-fit orthogonal 3x3 matrix 
+            respecting the direction of the X vector and the plane formed with the Y vector. 
+            The Z vector will be normal to this planes, and all vectors will be unitized. 
+            </td></tr><tr><td><a href="3323e421-d598-4430-8d98-f4f63875ca90.htm">RotationMatrix(Double, Double, Double, Double, Double, Double, Double, Double, Double)</a></td><td>
+            Create a 3x3 Rotation Matrix from it's constituent components. 
+            Elements of the rotation matrix, ordered in row to column way, 
+            i.e. r[2] is r13 (row 1 col 3), r[6] is r31, etc. 
+            This Matrix will be reorthogonalized if necessary.
+            </td></tr><tr><td><a href="72731896-eb65-1a59-b9a9-9c83f025561b.htm">RotationMatrix(Double, Double, Double, Double, Double, Double, Double, Double, Double, Boolean)</a></td><td>
+            A private constructor to bypass orthogonalization when input parameters are
+            guaranteed to be orthogonal.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Properties</h2><div id="IDVEASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="cb789569-f59f-98cd-214a-9bf983460054.htm">m00</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="13669663-e04d-cc9e-fc52-94e80663abe5.htm">m01</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="7bfaa739-cef3-cf76-b3cf-44d8d38bdbc3.htm">m02</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="88671432-f7c1-c11d-1a1c-f9df5b7f0cc7.htm">m10</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="c24104a5-5a87-4dbb-caee-f073f840cfbf.htm">m11</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="520afdf5-fb3e-03ee-735c-5fda1cf99c23.htm">m12</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="2a3abc6a-5e30-0ed7-c336-fea74651782b.htm">m20</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="aecd216c-39be-9dd5-d8f1-e3744c401f84.htm">m21</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="03b6e189-414a-1f3d-340d-0978e4e95368.htm">m22</a></td><td>
+            Alias
+            </td></tr><tr><td><a href="93b9f574-99d1-8cd1-f0a3-3c298d50e942.htm">R</a></td><td>
+            Elements of the rotation matrix, ordered in row to column way, 
+            i.e. r[2] is r13 (row 1 col 3), r[6] is r31, etc. 
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDBEASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="f442fb33-d555-588e-c31b-88ac90a6995d.htm">Determinant</a></td><td>
+            Returns the determinant of this Matrix.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="16f5aef8-ac06-41f3-661e-bc3dd2d93f79.htm">Identity</a></td><td>
+            Turn this into an indentity matrix, representing no transformation. 
+            </td></tr><tr><td><a href="bb1fb190-1885-672f-0c16-5a7e4409e22a.htm">Initialize</a></td><td>
+            An internal initializator to start this matrix from its components. 
+            The method allows for optional re-orthogonalization of this Matrix.
+            </td></tr><tr><td><a href="c3185fde-0bba-026c-c96c-a12402ace7e5.htm">Invert</a></td><td>
+            Inverts this Matrix.
+            Returns false if the Matrix could not be inverted (singular matrix). 
+            </td></tr><tr><td><a href="aa28b603-526c-ecd9-6428-13be4ce30741.htm">IsIdentity</a></td><td>
+            Is this an identity matrix?
+            </td></tr><tr><td><a href="79867142-6cea-02e1-8935-7ad43282509b.htm">IsOrthogonal</a></td><td>
+            Is this 
+            </td></tr><tr><td><a href="7d18c84f-51df-a4a5-77d3-e13a5f7f5d0f.htm">IsSimilar</a></td><td>
+            Test if this RotationMatrix is approximately equal to another.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="889bc692-624b-7d98-ea9c-f31a6ccb8b93.htm">Multiply</a></td><td>
+            Multiplies two rotation matrices.
+            </td></tr><tr><td><a href="53ec9298-61ef-4fb9-c222-0979e4bc4cb6.htm">Orthogonalize</a></td><td>
+            Force the orthogonalization of this matrix.
+            </td></tr><tr><td><a href="200eed0d-138e-6770-840a-0a675ff65cf5.htm">ToAxisAngle</a></td><td>
+            Returns an Axis Angle representation of this Rotation Matrix. 
+            Note that the returned Axis Angle will always represent a positive rotation between [0, 180]
+            </td></tr><tr><td><a href="333cba20-e40d-3531-abfc-fdc41c4fcdd8.htm">ToQuaternion</a></td><td>
+            Returns a Quaternion representing the same rotation as this Matrix.
+            </td></tr><tr><td><a href="a1e583a5-e97f-8df5-86fc-a4758a5a5497.htm">ToRotationVector</a></td><td>
+            Returns a Rotation Vector representation of this Matrix.
+            </td></tr><tr><td><a href="557dfdb3-a527-f813-fe8d-8ceb326f8fd9.htm">ToString</a></td><td><br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">Object<span id="LSTAD5BABFC_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ToString<span id="LSTAD5BABFC_4" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="f024c8a6-5d42-aa4a-5ca0-a861579b814f.htm">ToYawPitchRoll</a></td><td>
+            Return the YawPitchRoll representation of this matrix.s
+            </td></tr><tr><td><a href="58472b88-f8e6-18e0-6209-d1a660acd95c.htm">Transpose</a></td><td>
+            Transposes this Matrix.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="74cdaf10-aea3-c3c4-27fe-7db6c7a360b6.htm">Machina.Types.Geometry Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Constructors</a></li><li><a class="quickLink">Properties</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>

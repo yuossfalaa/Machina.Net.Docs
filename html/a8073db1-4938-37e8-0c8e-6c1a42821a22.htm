@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Quaternion Methods</title><meta name="Title" content="Methods" /><meta name="Help.Id" content="Methods.T:Machina.Types.Geometry.Quaternion" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Machina.Types.Geometry" /><meta name="guid" content="a8073db1-4938-37e8-0c8e-6c1a42821a22" /><meta name="tocFile" content="../toc/IDHI.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Quaternion Methods</h1><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDADASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="64455e3e-98dc-029a-d056-5f8fa6adca37.htm">Add</a></td><td>
+            Add a Quaternion to this one. 
+            </td></tr><tr><td><a href="6b879113-ccd5-d87c-ff05-b0dbe6b28411.htm">Addition</a></td><td>
+            Returns the addition of two quaternions.
+            </td></tr><tr><td><a href="4dab6fea-f3f6-4f91-32f3-8577470f6bbd.htm">Conjugate<span id="LSTEE95CCF3_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td>
+            Turns this Rotation into its conjugate.
+            See http://mathworld.wolfram.com/QuaternionConjugate.html.
+            </td></tr><tr><td><a href="f37356f1-95e9-2e6f-dc4b-f89e707c6977.htm">Conjugate(Quaternion)</a></td><td>
+            Returns the conjugate of given quaternion.
+            </td></tr><tr><td><a href="615cf307-c0b1-b8e0-54b4-470ccbe1c135.htm">Divide</a></td><td>
+            Divide this Quaternion by another one. 
+            In reality, this quaternion is post-multiplied by the inverse of the provided one.
+            </td></tr><tr><td><a href="2150702a-7242-75ec-05aa-74b2e9cbdc44.htm">Division</a></td><td>
+            Returns the division of q1 by q2.
+            Under the hood, q1 is post-multiplied by the inverse of q2.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="e7bf0dc0-6a82-d956-02f2-9930b6661982.htm">Identity<span id="LSTEE95CCF3_1" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td>
+            Turns into a positive identity Quaternion (1, 0, 0, 0).
+            </td></tr><tr><td><a href="a78c0a57-e3a5-2fc7-13db-0d5d532cb7ff.htm">Identity(Boolean)</a></td><td>
+            Turns into an identity Quaternion.
+            </td></tr><tr><td><a href="72f67904-2cba-a2a8-eff7-39c05afcb884.htm">Inverse</a></td><td>
+            Returns the inverse of given quaternion.
+            </td></tr><tr><td><a href="6f733263-f43c-3c4c-c803-f66c892a7288.htm">Invert</a></td><td>
+            Inverts this quaternion.
+            </td></tr><tr><td><a href="c5baf30d-597b-cdd8-1f4f-53336425c887.htm">IsEquivalent</a></td><td>
+            Is the rotation represented by this Quaternion equivalent to another? 
+            Equivalence is defined as the rotation operation resulting in the same
+            orientation in three-dimensional space. 
+            </td></tr><tr><td><a href="c7e068d4-c338-2596-93a9-6027deb33bd8.htm">IsIdentity</a></td><td>
+            Is this an identity Quaternion? 
+            The identity Quaternion (1, 0, 0, 0) or (-1, 0, 0, 0) produces no rotation.
+            </td></tr><tr><td><a href="46b1c4a0-bb4b-fd1d-2236-4263ff1a9098.htm">IsSimilar</a></td><td>
+            Test if this Quaternion approximately equals another. 
+            </td></tr><tr><td><a href="c3efaa3d-c4b6-29fe-a239-7983e0e6aaa1.htm">IsUnit</a></td><td>
+            Is this a unit length quaternion?
+            </td></tr><tr><td><a href="7a6be73f-da60-ce42-85fb-a4a913ec36e3.htm">IsZero</a></td><td>
+            Is this a zero length quaternion?
+            </td></tr><tr><td><a href="86c74c18-1d65-2b6f-69af-608cf961933f.htm">Length</a></td><td>
+            Returns the length (norm) of this Quaternion.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="36d06486-7ba6-456f-1ae1-c0f78700f5ff.htm">Multiplication</a></td><td>
+            Returns the <a href="https://en.wikipedia.org/wiki/Quaternion#Hamilton_product">Hamilton product</a> 
+            of the first quaternion by the second.
+            Remember quaternion multiplication is non-commutative.
+            </td></tr><tr><td><a href="c864f5db-d2ab-189b-399c-7de36f5affac.htm">Multiply</a></td><td>
+            Post-Multiply this Quaternion by the specified one, a.k.a. this = this * q. 
+            Conceptually, this means that a Rotation 'q' in Local (intrinsic) coordinates is applied 
+            to this Rotation.
+            See https://en.wikipedia.org/wiki/Quaternion#Hamilton_product
+            </td></tr><tr><td><a href="886f8cc4-bc9c-f081-ce18-3a3aee716a23.htm">Normalize</a></td><td>
+            Turns this Quaternion into a <a href="https://en.wikipedia.org/wiki/Versor">Versor</a> (unit length quaternion).
+            If quaternion couldn't be normalized (zero-length), turns it into identity and return false.
+            </td></tr><tr><td><a href="8e6de10e-5881-e1ed-637a-594858a1a388.htm">NormalizeVector</a></td><td>
+            Normalizes the complex portion of this Quaternion (the rotation vector)
+            maintaining the scalar portion (the rotation angle) the same. This is useful when
+            coming from a rotation specified by non-unit vectors, to maintain angular spin.
+            If the scalar is outside the [-1, 1] range, the entire quaternion will be normalized instead.
+            </td></tr><tr><td><a href="14aaf806-d16d-56fa-0fd1-d206f3ef37d8.htm">PreMultiply</a></td><td>
+            Premultiplies this Quaternion by the specified one, a.k.a. this = q * this. 
+            Conceptually, this means that a Rotation 'q' in Global (extrinsic) coordinates is applied 
+            to this Rotation.
+            See https://en.wikipedia.org/wiki/Quaternion#Hamilton_product
+            </td></tr><tr><td><a href="98e0ccd5-8ff5-fa9b-e883-3e1f229e2ed2.htm">RotateGlobal</a></td><td>
+            Rotate this Quaternion by specified Rotation around GLOBAL (extrinsic) reference system.
+            </td></tr><tr><td><a href="6a6eaefb-d21d-ea0f-85b2-856ff75ddb1e.htm">RotateLocal</a></td><td>
+            Rotate this Quaternion by specified Rotation around LOCAL (intrinsic) reference system.
+            </td></tr><tr><td><a href="e59e7f1c-fc28-2872-7a12-8b3d332c73b0.htm">Scale(Double)</a></td><td>
+            Multiply this Quaternion by a scalar.
+            </td></tr><tr><td><a href="34cf1d30-b165-a11e-cb77-0b3574b9820d.htm">Scale(Quaternion, Double)</a></td><td>
+            Returns a new Quaternion equal to the original multiplied by a factor.
+            </td></tr><tr><td><a href="b8b404ad-7f9c-0da5-77dc-fa3bfbc69c37.htm">Set(Quaternion)</a></td><td>
+            Shallow-copies the values of specified Quaternion.
+            </td></tr><tr><td><a href="0f9376d4-596e-9930-e00d-f1d3c1288b66.htm">Set(Double, Double, Double, Double)</a></td><td>
+            Sets the values of this Quaternion's components. 
+            The result is Vector-Normalized.
+            </td></tr><tr><td><a href="62e1298b-471d-95f6-9c84-8348f1c2775d.htm">Set(Double, Double, Double, Double, Boolean)</a></td><td>
+            Sets the values of this Quaternion's components with the option to bypass normalization.
+            For internal use, when wxyz come from a normalized source.
+            </td></tr><tr><td><a href="f048d27c-f8aa-abc4-3a26-712994911a07.htm">SqLength</a></td><td>
+            Returns the square length of this Quaternion.
+            </td></tr><tr><td><a href="d7cd6111-4838-342f-9fac-b7810ee7b2ad.htm">Subtract</a></td><td>
+            Subtract a quaternion from this one. 
+            </td></tr><tr><td><a href="1afd5eee-0bb8-e4ab-7751-3d1d34df8c77.htm">Subtraction</a></td><td>
+            Returns the subtraction of two quaternions.
+            </td></tr><tr><td><a href="52d5dc7b-a1a5-0333-7139-26388762ce4c.htm">Sum</a></td><td>
+            Return the simple sum of the scalar and vector components.
+            </td></tr><tr><td><a href="445a7530-e979-4aa0-22d0-54e06b04afa0.htm">ToArrayString</a></td><td> </td></tr><tr><td><a href="97d02234-4510-e462-d955-33168fa59b39.htm">ToAxisAngle</a></td><td>
+            Returns the AxisAngle rotation represented by this Quaternion. 
+            Note it will always return the unit vector corresponding to a positive rotation, 
+            even if the quaternion was created from a negative one (flipped vector).
+            See http://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToAngle/index.htm
+            </td></tr><tr><td><a href="89810cdc-d391-2e4b-79e1-489ddacc6416.htm">ToRotationMatrix</a></td><td>
+            Returns a 3x3 Rotation Matrix representing this Quaternion's rotation. 
+            </td></tr><tr><td><a href="533e154d-e453-6bf6-f400-1792759d3dfc.htm">ToRotationVector</a></td><td>
+            Returns the Rotationvector rotation represented by this Quaternion. 
+            Note it will always return the unit vector corresponding to a positive rotation, 
+            even if the quaternion was created from a negative one (flipped vector).
+            </td></tr><tr><td><a href="877634cf-582b-db18-5e7a-0b9291b3cf41.htm">ToString<span id="LSTEE95CCF3_2" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td><br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">Object<span id="LSTEE95CCF3_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ToString<span id="LSTEE95CCF3_4" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="c315ae10-517c-f80d-7332-9771035012dd.htm">ToString(Boolean)</a></td><td> </td></tr><tr><td><a href="d0477e96-b4e8-e4ac-02eb-a2d1e4d20c00.htm">ToYawPitchRoll</a></td><td>
+            Returns the Euler Angle representation of this rotation in Tait-Bryan representation
+            (intrinsic ZY'X'' rotations, or Yaw-Pitch-Roll).
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="3f62bfec-ea5e-0a29-c999-770a7be71b80.htm">Quaternion Class</a></div><div><a href="74cdaf10-aea3-c3c4-27fe-7db6c7a360b6.htm">Machina.Types.Geometry Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script></body></html>

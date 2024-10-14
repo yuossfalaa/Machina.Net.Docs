@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Machina Namespace</title><meta name="Title" content="Machina" /><meta name="Help.Id" content="N:Machina" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Machina" /><meta name="guid" content="d060485c-ae14-71b2-40f1-47eded9ebe2c" /><meta name="tocFile" content="../toc/Root.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Machina Namespace</h1><div class="summary"> </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Classes</h2><div id="IDACASection"><table id="classList" class="table is-hoverable"><tr><td><a href="4b4d635e-1610-43dd-aa7f-b8de5eb4f99a.htm">Action</a></td><td>
+            Actions represent high-level abstract operations such as movements, rotations, 
+            transformations or joint manipulations, both in absolute and relative terms. 
+            They are independent from the device's properties, and their translation into
+            actual robotic instructions depends on the robot's properties and state. 
+            </td></tr><tr><td><a href="7115d3e6-2258-e875-c863-fd80db42c1af.htm">ActionAcceleration</a></td><td> </td></tr><tr><td><a href="6ce5ddec-016f-9bb9-fac3-231a56a77995.htm">ActionArcMotion</a></td><td>
+            An Action representing an arc motion through two frames. 
+            </td></tr><tr><td><a href="8e677e62-fa7b-6525-8189-c74a91cccd77.htm">ActionArmAngle</a></td><td>
+            An action to change the arm-angle value for 7-dof robotic arms. 
+            </td></tr><tr><td><a href="887b842f-eb8b-09c7-8782-973f60ba274e.htm">ActionAttachTool</a></td><td>
+            Attaches a Tool to the robot flange. Must have beeb previously defined on the Robot.
+            If the robot already had a tool, it will be replaced by this one.
+            </td></tr><tr><td><a href="24314079-1ad7-3103-026b-4a65bd2133fb.htm">ActionAxes</a></td><td>
+            An Action representing the raw angular values of the device's joint rotations.
+            </td></tr><tr><td><a href="3ed74826-10cb-5257-e600-49e2e75c2a77.htm">ActionBuffer</a></td><td>
+            A class that manages a FIFO list of Actions.
+            </td></tr><tr><td><a href="2df630c3-0aaf-f72d-a2ef-7b4f470c6e15.htm">ActionComment</a></td><td>
+            Adds a line comment to the compiled code
+            </td></tr><tr><td><a href="0aaadcc2-7ba2-f3f3-b97e-aed0d3ec2cc8.htm">ActionCoordinates</a></td><td>
+            An Action to change current Reference Coordinate System.
+            </td></tr><tr><td><a href="95d5a588-1761-6b68-c607-fc424b0ea0d8.htm">ActionCustomCode</a></td><td>
+            Insert a line of custom code in the program. 
+            </td></tr><tr><td><a href="a42b028e-9e07-c7c4-6fbd-c34f0f478b1a.htm">ActionDefineTool</a></td><td>
+            Defines a new Tool on the Robot that will be available for Attach/Detach
+            </td></tr><tr><td><a href="ec6ee295-19c6-7ffd-edc7-d7b1c93192bf.htm">ActionDetachTool</a></td><td>
+            Detaches any tool currently attached to the robot.
+            </td></tr><tr><td><a href="18c85605-dd6f-b136-db5a-50abf8d73361.htm">ActionExecutedEventArgs</a></td><td>
+            Arguments for ActionExecuted events.
+            </td></tr><tr><td><a href="39a2dbd9-0a2b-f49e-7baa-9d8734e6e0a1.htm">ActionExternalAxis</a></td><td>
+            Set the vlaue of an external axis to the device.
+            </td></tr><tr><td><a href="936300ec-f370-0dbd-472f-f8c17c2a16c9.htm">ActionExtrusion</a></td><td>
+            Turns extrusion on/off in 3D printers.
+            </td></tr><tr><td><a href="0a6c88c7-d061-67d0-98f1-71051475a7ce.htm">ActionExtrusionRate</a></td><td>
+            Sets the extrusion rate in 3D printers in mm of filament per mm of lineal travel.
+            </td></tr><tr><td><a href="8779f78c-74f5-6ba1-c2fb-95a6712f8f3a.htm">ActionInitialization</a></td><td>
+            Apply general initialization parameters to the device.
+            </td></tr><tr><td><a href="048549d5-3fc9-477c-3294-fe120c444cda.htm">ActionIOAnalog</a></td><td>
+            Writes a value to analog pin #.
+            </td></tr><tr><td><a href="3ecb63be-3587-cf01-23bd-d8cbb182f05c.htm">ActionIODigital</a></td><td>
+            Turns digital pin # on or off.
+            </td></tr><tr><td><a href="32a6bb66-9f13-eb88-057a-851726201ce4.htm">ActionIssuedEventArgs</a></td><td>
+            Arguments for ActionIssued events.
+            </td></tr><tr><td><a href="a4e9f70f-c0a7-6e1d-8e07-08dc6fcd56b5.htm">ActionMessage</a></td><td>
+            An Action representing a string message sent to the device to be displayed.
+            </td></tr><tr><td><a href="8a4b98b5-2a82-4759-1af8-d405e0f2ab56.htm">ActionMotionMode</a></td><td>
+            An Action to change current MotionType.
+            </td></tr><tr><td><a href="14126b50-6d9c-4aa2-16f9-8c3653200d30.htm">ActionPrecision</a></td><td>
+            An Action to change current precision settings.
+            </td></tr><tr><td><a href="c1145e49-c86d-71e6-0750-51a6819415d8.htm">ActionPushPop</a></td><td>
+            An Action to Push or Pop current device settings (such as speed, precision, etc.)
+            </td></tr><tr><td><a href="65ef3c97-14a2-740c-6f3e-57a86be2d433.htm">ActionReleasedEventArgs</a></td><td>
+            Arguments for ActionReleased events.
+            </td></tr><tr><td><a href="ea0f7e8f-c7f1-1b18-e808-ce462290dae2.htm">ActionRotation</a></td><td>
+            An Action representing a Rotation transformation in Quaternion represnetation.
+            </td></tr><tr><td><a href="0971b736-6dca-6d50-f079-d88a45f3a204.htm">ActionSpeed</a></td><td>
+            An Action to change the current speed setting.
+            </td></tr><tr><td><a href="234a12d0-bcd1-d92d-f33b-5a65fbaee8a9.htm">ActionTemperature</a></td><td>
+            Sets the temperature of the 3D printer part, and optionally waits for the part to reach the temp to resume eexecution.
+            </td></tr><tr><td><a href="74742fa7-a8a8-b4b0-8e32-814d86ee7049.htm">ActionTransformation</a></td><td>
+            An Action representing a combined Translation and Rotation Transformation.
+            </td></tr><tr><td><a href="d86cce55-cd85-360c-938e-3bc8d5a47093.htm">ActionTranslation</a></td><td>
+            An action representing a Translation transform in along a guiding vector.
+            </td></tr><tr><td><a href="00b73a42-35c5-c91b-26b2-d0252a7bae17.htm">ActionWait</a></td><td>
+            An Action represening the device staying idle for a period of time.
+            </td></tr><tr><td><a href="b8f30d0a-5beb-a247-8ef0-2bf4242a1b04.htm">Compiler</a></td><td>
+            An abstract class that features methods to translate high-level robot actions into
+            platform-specific programs. 
+            </td></tr><tr><td><a href="401ba6a8-64a2-782f-3444-6e802dd33899.htm">CompilerABB</a></td><td>
+            A compiler for ABB 6-axis industrial robotic arms.
+            </td></tr><tr><td><a href="23370648-9542-0e21-7972-acf08c5fdd72.htm">CompilerHuman</a></td><td>
+            A quick compiler for human-readable instructions.
+            </td></tr><tr><td><a href="a67a796f-6d3b-5541-a305-2d3decefcc22.htm">CompilerKUKA</a></td><td>
+            A compiler for KUKA 6-axis industrial robotic arms.
+            </td></tr><tr><td><a href="40300e0e-a7ea-8c62-7bd8-51886f8eba85.htm">CompilerMACHINA</a></td><td>
+            A simple compiler that returns a program in native Machina language, 
+            i.e. serializing each Action into its own Instruction form.
+            </td></tr><tr><td><a href="350cfc4f-3e30-6a05-ca2d-485045d8026e.htm">CompilerUR</a></td><td>
+            A compiler for Universal Robots 6-axis robotic arms.
+            </td></tr><tr><td><a href="617425e3-b4a7-8ea6-dc37-c7b16a18017e.htm">CompilerZMORPH</a></td><td>
+            A compiler for ZMorph 3D printers. 
+            </td></tr><tr><td><a href="957a2d9c-8a79-179e-aa08-efcb25b04c6f.htm">Control</a></td><td>
+            The core class that centralizes all private control.
+            </td></tr><tr><td><a href="da9dc09a-8bfa-a660-448b-8167ba3f7443.htm">IO</a></td><td> </td></tr><tr><td><a href="6d60b223-bc98-489e-8d1f-f2c5c7d6d21b.htm">IssueActionManager</a></td><td>
+            This class holds Methods to issue Actions and then use a control class to apply the action request
+            </td></tr><tr><td><a href="97a748bc-a4e4-32f4-6ebf-5b6c2de5de3d.htm">Logger</a></td><td>
+            A class to bind Machina logging information to custom outputs via events.
+            </td></tr><tr><td><a href="6048a4b2-4bae-62e5-d6e5-5b4a57b902a7.htm">LoggerArgs</a></td><td>
+            Custom logging arguments
+            </td></tr><tr><td><a href="b36b08b1-b38e-0102-518c-f85d4869dde5.htm">MachinaEventArgs</a></td><td> </td></tr><tr><td><a href="0da3a4c6-558c-5ac4-05a9-d25b8794afd3.htm">MotionUpdateEventArgs</a></td><td>
+            Arguments for MotionUpdate events.
+            </td></tr><tr><td><a href="6377f9d4-c8f5-5d0e-8fdd-c9534f8b1d36.htm">Robot</a></td><td>
+            The core Class in Machina. Represents a state and action-based virtual robot, 
+            and exposes the public API for robot manipulation and control.
+            </td></tr><tr><td><a href="32115240-c8d9-f590-87e5-4d0c05c27158.htm">RobotCursor</a></td><td>
+            Represents an abstraction of the state of a robotic device. 
+            Keeps track of things such as position, orientation, joint configuration,
+            current speed, zone, etc.
+            Useful as virtual representation of a simulated or controlled robot actuator. 
+            </td></tr><tr><td><a href="86fb6294-577e-ddf4-ca9e-45fd6f7d3945.htm">RobotLogger</a></td><td>
+            A "Console" class that can be attached to objects to track their log messages.
+            </td></tr><tr><td><a href="25aa21be-7dd9-413a-7142-5d4e2fcd59a0.htm">Settings</a></td><td>
+            A class representing a Setting state, to be un/buffered.
+            </td></tr><tr><td><a href="8a6119f4-d117-36f0-9317-9a188d9ec8ad.htm">SettingsBuffer</a></td><td>
+            A buffer manager for Settings objects.
+            </td></tr><tr><td><a href="7c6829cf-96ab-6dca-84df-f88df35f3723.htm">Tool</a></td><td>
+            Represents a tool object that can be attached to the end effector of the robot.
+            This class is public and will be used directly by the user, so careful design of the API
+            vs. internal methods will be relevant. 
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Interfaces</h2><div id="ID0YB0CASection"><table id="interfaceList" class="table is-hoverable"><tr><td><a href="cc6e1a49-ff49-438f-795e-91eb4448933d.htm">IInstructable</a></td><td>
+            Makes an object serializable into the Machina API instruction that would generate an equal instance of it.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Delegates</h2><div id="ID02B0CASection"><table id="delegateList" class="table is-hoverable"><tr><td><a href="4be06b24-9ee4-41d1-fcd0-e788490c7b97.htm">Logger<span id="LSTAC87E515_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CustomLoggingHandler</a></td><td> </td></tr><tr><td><a href="447973f2-3255-b882-bfd8-5c173e3007ce.htm">Logger<span id="LSTAC87E515_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>WriteLineHandler</a></td><td> </td></tr><tr><td><a href="49885fcc-f522-c63b-6526-e5a3efae23f5.htm">Robot<span id="LSTAC87E515_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ActionExecutedHandler</a></td><td> </td></tr><tr><td><a href="24630866-db7a-b154-86fc-f9ae15426e74.htm">Robot<span id="LSTAC87E515_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ActionIssuedHandler</a></td><td> </td></tr><tr><td><a href="b8ee771f-c30c-e733-a25a-f63bad3df4f5.htm">Robot<span id="LSTAC87E515_4" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ActionReleasedHandler</a></td><td> </td></tr><tr><td><a href="3b4b8397-94b1-103b-7d36-db81d1853ed4.htm">Robot<span id="LSTAC87E515_5" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>MotionUpdateHandler</a></td><td> </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Enumerations</h2><div id="IDBCASection"><table id="enumerationList" class="table is-hoverable"><tr><td><a href="103c4e17-106d-d393-edde-9f35775c65ae.htm">ActionType</a></td><td>
+            Defines an Action Type, like Translation, Rotation, Wait... 
+            Useful to flag base Actions into children classes.
+            </td></tr><tr><td><a href="1fbfa841-93a5-0ae6-2d87-fbd53ef04449.htm">ConnectionType</a></td><td>
+            Defines who will be in charge of setting up a device for correct connection, 
+            i.e. having Machina try to load a server/firmata modules to the controller or 
+            leave that task to the User (default). 
+            </td></tr><tr><td><a href="84192194-061f-3ea7-c5c8-29debcc569f9.htm">ControlType</a></td><td>
+            Represents the type of control that will be performed over the real/virtual robot.
+            </td></tr><tr><td><a href="92bd0d60-4f89-cb7f-578b-d2a7597df164.htm">CursorType</a></td><td>
+            Defines what state is being represented by a cursor.
+            </td></tr><tr><td><a href="f06754c7-ed33-149b-5dd8-2170eef7ec56.htm">CycleType</a></td><td>
+            Defines the different cycle type modes a program can be ran.
+            </td></tr><tr><td><a href="b05ce8b3-f4af-0d78-0a79-8d862047be7c.htm">ExecutionState</a></td><td> </td></tr><tr><td><a href="112443f5-942f-d933-8498-8329433c48d7.htm">ExternalAxesTarget</a></td><td>
+            Defines where will the external axes be applied to
+            </td></tr><tr><td><a href="a1f9355a-f6cd-51cc-5c73-704767e9c906.htm">ExternalAxisType</a></td><td>
+            Defines the types of External Axes
+            </td></tr><tr><td><a href="c9d88ed8-2306-5fef-8f52-3d4fe5280b57.htm">LogLevel</a></td><td>
+            Defines how verbose should internal logging be
+            </td></tr><tr><td><a href="da869d27-73b5-f21f-6a52-897197a39db2.htm">MotionType</a></td><td>
+            Defines which type of motion to use for translation actions.
+            </td></tr><tr><td><a href="11bcd9d8-758c-b195-ff0a-4ab51bfaf965.htm">ReferenceCS</a></td><td>
+            Defines which reference coordinate system to use for transform actions.
+            </td></tr><tr><td><a href="336b0683-3327-7565-deb8-365f5451cc81.htm">RobotPartType</a></td><td>
+            An enum with different robotic parts, to be used as targets for execution operations, 
+            e.g. 3D printing, I/O, etc.
+            @TODO: temp, this should probably go somewhere else... 
+            </td></tr><tr><td><a href="5c8a1e9c-7caf-7984-6889-cedc71b38344.htm">RobotType</a></td><td>
+            Defines the type of robotic device.
+            </td></tr><tr><td><a href="1eb6c518-a391-d82e-6fcf-543cfdd81679.htm">TCPConnectionStatus</a></td><td> </td></tr></table></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Classes</a></li><li><a class="quickLink">Interfaces</a></li><li><a class="quickLink">Delegates</a></li><li><a class="quickLink">Enumerations</a></li></ul></nav></div></div></div></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script></body></html>

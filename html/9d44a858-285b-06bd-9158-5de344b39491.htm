@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Strings Class</title><meta name="Title" content="Strings" /><meta name="Help.Id" content="T:Machina.Utilities.Strings" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Machina.Utilities" /><meta name="guid" content="9d44a858-285b-06bd-9158-5de344b39491" /><meta name="Description" content="Utility functions for string operations." /><meta name="tocFile" content="../toc/IDK.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Strings Class</h1><div class="summary">
+            Utility functions for string operations.
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="e0cbc9b8-e683-5c66-72aa-429270a725b8.htm">Machina.Utilities</a><br /><strong>Assembly:</strong> Machina (in Machina.dll) Version: 0.0.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="identifier">Strings</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">Strings</span></dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDAEASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="e09ea1b7-651c-8e3a-9ba0-06a7dc78cd7c.htm">CompareVersions</a></td><td>
+            Compares strings representing semantic versioning versions, like "1.3.2".
+            Returns 1 if A is newer than B, -1 if B is newer than A, and 0 if same version. 
+            </td></tr><tr><td><a href="eee51d7b-d003-f51c-842a-27c43ad934c1.htm">EnumerateArray</a></td><td> </td></tr><tr><td><a href="e2b4f6ad-fe59-57fe-dd7f-7c53d2ed1ed2.htm">EscapeDoubleQuotes</a></td><td>
+            Finds double quotes on a string and scapes them adding a backlash in front.
+            </td></tr><tr><td><a href="da8fb852-ffc8-0eb6-aad7-749a1d82fce3.htm">IsValidVariableName</a></td><td>
+            Checks if the argument is a valid variable name. 
+            Basically, it returns true if the first character of the string is a letter...
+            </td></tr><tr><td><a href="4992ad93-dd40-4d29-2ec6-fc4e6852c98c.htm">ObjectArrayToString</a></td><td>
+            Given an array of objects, returns a string representation using their own .ToString()
+            </td></tr><tr><td><a href="71a27e66-ff08-74a5-2359-cd4b27ecae8d.htm">RemoveEmptyLines</a></td><td>
+            Given an enumerable of strings, returns a clean list with no empty lines.  
+            </td></tr><tr><td><a href="4d07635a-b374-4e90-ae58-7e0237565eb7.htm">RemoveNewLineChars</a></td><td>
+            Given a string, removes \r\n new line characters. 
+            </td></tr><tr><td><a href="f5c2e457-366f-1e53-bec7-a5a937ecb075.htm">RemoveSideChar</a></td><td>
+            Given a string, returns a new string with one occurrence of the param char removed. 
+            </td></tr><tr><td><a href="95208e78-9cf0-3f73-f6b9-b380d5e8343b.htm">RemoveSideChars</a></td><td>
+            Given a string, returns a new string with all preceding and trailing occurreces of another string removed.
+            </td></tr><tr><td><a href="c1fc5269-c4f7-d688-dfb6-cecb22ac5156.htm">RemoveString</a></td><td>
+            Given a string, returns a new string with all occurrences of another string within it removed.
+            </td></tr><tr><td><a href="23eeebe6-df25-1bb9-90b7-9169c9a5cc7e.htm">SafeProgramName</a></td><td>
+            Returns a string with safe ASCII characters to be used as a robot program name. 
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="e0cbc9b8-e683-5c66-72aa-429270a725b8.htm">Machina.Utilities Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>

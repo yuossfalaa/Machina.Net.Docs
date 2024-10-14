@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Robot Class</title><meta name="Title" content="Robot" /><meta name="Help.Id" content="T:Machina.Robot" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Machina" /><meta name="guid" content="6377f9d4-c8f5-5d0e-8fdd-c9534f8b1d36" /><meta name="Description" content="The core Class in Machina. Represents a state and action-based virtual robot, and exposes the public API for robot manipulation and control." /><meta name="tocFile" content="../toc/IDA.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Robot Class</h1><div class="summary">
+            The core Class in Machina. Represents a state and action-based virtual robot, 
+            and exposes the public API for robot manipulation and control.
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="d060485c-ae14-71b2-40f1-47eded9ebe2c.htm">Machina</a><br /><strong>Assembly:</strong> Machina (in Machina.dll) Version: 0.0.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">Robot</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">Robot</span></dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Properties</h2><div id="ID0ZC0EASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="54ab489a-2359-377c-d0e4-a895b805e601.htm">Brand</a></td><td>
+            What brand of robot is this?
+            </td></tr><tr><td><a href="8fc3dc1d-b94d-a931-a7c5-4b22e64e6161.htm">Logger</a></td><td> </td></tr><tr><td><a href="0dfc6e31-1463-f0d6-df79-9198b51ccc06.htm">Name</a></td><td>
+            A nickname for this Robot.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDJEASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="619a694f-9998-28be-d885-8c9aeb3b291e.htm">Acceleration</a></td><td>
+            Increase the acceleration at which new Actions will be executed. This value will be applied to linear motion in mm/s^2, and rotational or angular motion in deg/s^2.
+            </td></tr><tr><td><a href="0d6a1f79-35d9-3ad0-75a0-24ba596884a7.htm">AccelerationTo</a></td><td>
+            Set the acceleration at which new Actions will be executed. This value will be applied to linear motion in mm/s^2, and rotational or angular motion in deg/s^2.
+            </td></tr><tr><td><a href="463786b3-b273-7044-a3ae-ee040623752a.htm">ArcMotion(Point, Point)</a></td><td>
+            Issue a RELATIVE arc motion request according to the current reference system.
+            Orientation will remain constant throughout the motion.
+            </td></tr><tr><td><a href="f2eca478-de61-8c27-ce28-d24616d9dd07.htm">ArcMotion(Double, Double, Double, Double, Double, Double)</a></td><td>
+            Issue a RELATIVE arc motion request according to the current reference system.
+            Orientation will remain constant throughout the motion.
+            </td></tr><tr><td><a href="2ac933b7-77cb-7cff-d59d-803577c54a72.htm">ArcMotionTo(Plane, Plane)</a></td><td>
+            Issue an ABSOLUTE arc motion request according to the current reference system.
+            Orientation will also change through the fit planes.
+            </td></tr><tr><td><a href="4f19925b-6d19-fc27-2b95-e40017c24bf5.htm">ArcMotionTo(Point, Point)</a></td><td>
+            Issue an ABSOLUTE arc motion request according to the current reference system.
+            Orientation will remain constant throughout the motion.
+            </td></tr><tr><td><a href="253211c6-ee2a-06ca-00a2-85373a0e1a18.htm">ArcMotionTo(Double, Double, Double, Double, Double, Double)</a></td><td>
+            Issue an ABSOLUTE arc motion request according to the current reference system.
+            Orientation will remain constant throughout the motion.
+            </td></tr><tr><td><a href="a544e79d-6364-6a43-e256-0e73a9020cf9.htm">ArcMotionTo(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)</a></td><td>
+            Issue an ABSOLUTE arc motion request according to the current reference system.
+            Orientation will also change through the fit planes.
+            </td></tr><tr><td><a href="4b7e1218-9d8e-5f68-aecd-c57eebaa30a2.htm">ArmAngleTo</a></td><td>
+            Set the value of the arm-angle parameter.
+            This value represents the planar offset around the 7th axis for 7-dof robotic arms.
+            </td></tr><tr><td><a href="8643015d-8a11-e9d8-422c-5b3b63000112.htm">Attach</a></td><td>
+            Attach a Tool to the flange of this Robot.
+            From this moment, all Actions like Move or Rotate will refer
+            to the Tool Center Point (TCP).
+            <br /><span class="tag is-danger">Obsolete.</span></td></tr><tr><td><a href="1613e7ff-38a0-bdf8-50ce-91ef423a68d4.htm">AttachTool</a></td><td>
+            Attach a Tool to the flange of this Robot. From this moment on, 
+            all actions will refer to the new Tool Center Point (TCP) of this Tool.
+            Note that the Tool must have been previously defined via "DefineTool".
+            </td></tr><tr><td><a href="19d8b93f-22c8-74a8-a43d-721a4edb893c.htm">Axes(Joints)</a></td><td>
+            Issue a request to increment the angular values of the robot joint axes rotations.
+            Values expressed in degrees.
+            </td></tr><tr><td><a href="c8c198c7-1887-d3dc-beba-a8647cfdbe80.htm">Axes(Double, Double, Double, Double, Double, Double)</a></td><td>
+            Issue a request to increment the angular values of the robot joint axes rotations.
+            Values expressed in degrees.
+            </td></tr><tr><td><a href="4d3e54e2-414b-abc7-b9a9-e1b30a70b041.htm">AxesTo(Joints)</a></td><td>
+            Issue a request to set the angular values of the robot joint axes rotations.
+            Values expressed in degrees.
+            </td></tr><tr><td><a href="ce070b91-3372-c9cd-32fb-e7764a9292d4.htm">AxesTo(Double, Double, Double, Double, Double, Double)</a></td><td>
+            Issue a request to set the angular values of the robot joint axes rotations.
+            Values expressed in degrees.
+            </td></tr><tr><td><a href="1947606e-b8d1-5161-b6a4-027df9ea8d63.htm">Comment</a></td><td>
+            Display an internal comment in the compilation code. 
+            Useful for internal annotations, reminders, etc. 
+            </td></tr><tr><td><a href="2d56a7b3-71f2-68fe-77d6-b0c27bff9a84.htm">Compile</a></td><td>
+            Create a program in the device's native language with all the buffered Actions and return it as a RobotProgram,
+            representing the different program files. Note all buffered Actions will be removed from the queue.
+            </td></tr><tr><td><a href="8e32a355-7d2c-c3ef-7c48-80b4aee86d52.htm">Connect(Int32)</a></td><td>
+            Scans the network for robotic devices, real or virtual, and performs all necessary 
+            operations to connect to it. This is necessary for 'online' modes such as 'execute' and 'stream.'
+            </td></tr><tr><td><a href="07af2ade-1081-fd4a-5566-e8391e77c4e4.htm">Connect(String, Int32)</a></td><td>
+            Tries to establish connection to a remote device for 'online' modes.
+            </td></tr><tr><td><a href="0bb523be-7745-7d74-300b-d5f851a9cc97.htm">ConnectionManager(ConnectionType)</a></td><td>
+            Sets who will be in charge of managing the connection to the device,
+            i.e. having "Machina" try to load driver modules to the controller or 
+            leave that task to the "User" (default).
+            </td></tr><tr><td><a href="4126971f-acfd-7cb8-2032-9af85459f93a.htm">ConnectionManager(String)</a></td><td>
+            Sets who will be in charge of managing the connection to the device,
+            i.e. having "Machina" try to load driver modules to the controller or 
+            leave that task to the "User" (default).
+            </td></tr><tr><td><a href="d5d4fa70-e856-41fc-2f35-7c48f9030ae3.htm">ControlMode(ControlType)</a></td><td>
+            Sets the control type the robot will operate under, like "offline" or "online".
+            </td></tr><tr><td><a href="35c3ca39-34cb-a26f-1c8f-d717bf2a14f8.htm">ControlMode(String)</a></td><td>
+            Sets the control type the robot will operate under, like "offline" or "online".
+            </td></tr><tr><td><a href="7b174e26-5775-f281-b296-99fa019ee4a8.htm">Coordinates(ReferenceCS)</a></td><td>
+            Sets the reference system used for relative transformations.
+            </td></tr><tr><td><a href="5f1b0c79-96dc-37bb-bcb0-74a0090e735c.htm">Coordinates(String)</a></td><td>
+            Sets the reference system used for relative transformations ("local", "global", etc.)
+            </td></tr><tr><td><a href="bc0daa6d-9d1d-c295-4945-96b767d3d545.htm">Create<span id="LST52912447_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td>
+            Create a new instance of a Robot.
+            </td></tr><tr><td><a href="14943664-2643-c8b7-a5e0-2daa2ef8b851.htm">Create(String, RobotType)</a></td><td>
+            Create a new instance of a Robot.
+            </td></tr><tr><td><a href="e2b2e2b2-982e-a264-4bbf-c212f7fcec48.htm">Create(String, String)</a></td><td>
+            Create a new instance of a Robot.
+            </td></tr><tr><td><a href="360643e4-c311-9474-2b81-3cf40ae23605.htm">CustomCode</a></td><td>
+            Insert a line of custom code directly into a compiled program. 
+            This is useful for obscure instructions that are not covered by Machina's API. 
+            Note that this Action cannot be checked for validity by Machina, and you are responsible for correct syntax.
+            This Action is non-streamable. 
+            </td></tr><tr><td><a href="bda77aff-4e64-698c-aa56-3487a5ea5713.htm">DebugBuffers</a></td><td>
+            Dumps a list of the remaining buffered Actions.
+            </td></tr><tr><td><a href="c78386d4-984d-7129-23f9-9a9fe2264a5f.htm">DebugDump</a></td><td>
+            Dumps a bunch of information to the console about the controller, the main task, etc.
+            </td></tr><tr><td><a href="1773ffbe-d875-745c-8aee-7d8e3ffcb651.htm">DebugMode</a></td><td>
+            Sets Machina to dump all log messages to the Console.
+            </td></tr><tr><td><a href="943077a0-a3d4-19d0-03f2-6cb28b9c7f14.htm">DebugRobotCursors</a></td><td>
+            Dumps the state of the internal RobotPointers
+            </td></tr><tr><td><a href="d7c81c60-653e-7ecd-1d95-782114a2da3d.htm">DebugSettingsBuffer</a></td><td>
+            Dumps current Settings values
+            </td></tr><tr><td><a href="10bd523a-c042-c7fe-60a5-74afd5032f91.htm">DefineTool(Tool)</a></td><td>
+            Define a Tool object on the Robot's internal library to make it avaliable for future Attach/Detach actions.
+            </td></tr><tr><td><a href="ac897e6b-44e8-92f9-935b-c7391cb8688e.htm">DefineTool(String, Point, Orientation)</a></td><td>
+            Define a Tool object on the Robot's internal library to make it avaliable for future Attach/Detach actions.
+            </td></tr><tr><td><a href="cb69be67-0daf-2acc-f4e5-37a537eebd54.htm">DefineTool(String, Point, Orientation, Double, Point)</a></td><td>
+            Define a Tool object on the Robot's internal library to make it avaliable for future Attach/Detach actions.
+            </td></tr><tr><td><a href="1989f12d-5a6d-7f8d-4713-e0ddf8004da7.htm">DefineTool(String, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)</a></td><td>
+            Define a Tool object on the Robot's internal library to make it avaliable for future Attach/Detach actions.
+            </td></tr><tr><td><a href="04c676bf-97fa-3a0d-ca95-7934db8be3e9.htm">Detach</a></td><td>
+            Detach all Tools from the flange of this Robot.
+            From this moment, all Actions like Move or Rotate will refer
+            to the Flange Center Point (FCP).
+            <br /><span class="tag is-danger">Obsolete.</span></td></tr><tr><td><a href="626bdf8e-c592-1fea-6f84-3e0510394fe1.htm">DetachTool</a></td><td>
+            Detach all Tools from the flange of this Robot. From this moment on, 
+            all actions will refer to the flange as the Tool Center Point (TCP).
+            </td></tr><tr><td><a href="9a86d2dd-49c5-5637-cc85-f116765c0f5d.htm">Disconnect</a></td><td>
+            Performs all necessary instructions to disconnect from and dispose a robot device, real or virtual. 
+            This is necessary before leaving current execution thread.
+            </td></tr><tr><td><a href="f33efd41-6886-0748-f097-302ac3586ae9.htm">Do</a></td><td>
+            Issue an Action represented by a string in the Machina Common Language, such as `Do("Move(100,0,0);")`.
+            The Action will parse the string and use reflection to figure out the most suitable Action
+            to associate to this. 
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="b164a396-9ce3-57d4-e882-b0ad60b89c86.htm">ExternalAxis(Int32, Double)</a></td><td>
+            Increase the value of one of the robot's external axis. 
+            Values expressed in degrees or milimeters, depending on the nature of the external axis.
+            Note that the effect of this change of external axis will go in effect on the next motion Action.
+            </td></tr><tr><td><a href="9841e619-28dd-183a-22fa-b8e17d5ff180.htm">ExternalAxis(Int32, Double, ExternalAxesTarget)</a></td><td>
+            Increase the value of one of the robot's external axis. 
+            Values expressed in degrees or milimeters, depending on the nature of the external axis.
+            Note that the effect of this change of external axis will go in effect on the next motion Action.
+            </td></tr><tr><td><a href="f980f35d-6293-0ad6-1b16-89366593d0c2.htm">ExternalAxis(Int32, Double, String)</a></td><td>
+            Increase the value of one of the robot's external axis. 
+            Values expressed in degrees or milimeters, depending on the nature of the external axis.
+            Note that the effect of this change of external axis will go in effect on the next motion Action.
+            </td></tr><tr><td><a href="f0a25881-08a7-864a-ac5c-4a36dde2ed09.htm">ExternalAxisTo(Int32, Double)</a></td><td>
+            Set the value of one of the robot's external axis. 
+            Values expressed in degrees or milimeters, depending on the nature of the external axis.
+            Note that the effect of this change of external axis will go in effect on the next motion Action.
+            </td></tr><tr><td><a href="70f196b1-3f07-a10b-b9b6-d272799e19f1.htm">ExternalAxisTo(Int32, Double, ExternalAxesTarget)</a></td><td>
+            Set the value of one of the robot's external axis. 
+            Values expressed in degrees or milimeters, depending on the nature of the external axis.
+            Note that the effect of this change of external axis will go in effect on the next motion Action.
+            </td></tr><tr><td><a href="f6072cac-936f-036c-488f-1fc4db5b7316.htm">ExternalAxisTo(Int32, Double, String)</a></td><td>
+            Set the value of one of the robot's external axis. 
+            Values expressed in degrees or milimeters, depending on the nature of the external axis.
+            Note that the effect of this change of external axis will go in effect on the next motion Action.
+            </td></tr><tr><td><a href="844097fc-85c3-483b-f432-0109193cb2b3.htm">Extrude</a></td><td>
+            Turns extrusion in 3D printers on/off.
+            </td></tr><tr><td><a href="54fb4162-996b-8bc4-cd51-207ec2c01830.htm">ExtrusionRate</a></td><td>
+            Increases the extrusion rate of filament for 3D printers.
+            </td></tr><tr><td><a href="02136156-0c0a-fe76-ad11-1292c2731ca7.htm">ExtrusionRateTo</a></td><td>
+            Sets the extrusion rate of filament for 3D printers.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="c8b5f526-84d1-c2f1-430b-aff246f8d866.htm">GetCurrentAcceleration</a></td><td> </td></tr><tr><td><a href="b3b3964b-6142-031a-9966-35a600f0160b.htm">GetCurrentAxes</a></td><td>
+            Returns a Joint object representing the rotations in the robot axes.
+            </td></tr><tr><td><a href="200137d6-2edb-f958-386e-0d5eaea35d96.htm">GetCurrentExternalAxes</a></td><td>
+            Retuns an ExternalAxes object representing the values of the external axes. If a value is null, that axis is not valid.
+            </td></tr><tr><td><a href="aa5be954-fea2-2daa-e692-b507da15987a.htm">GetCurrentMotionMode</a></td><td> </td></tr><tr><td><a href="3838a659-83e1-bb95-8d1a-15e16fa71633.htm">GetCurrentPosition</a></td><td>
+            Returns a Point representation of the Robot's TCP position in mm and World coordinates.
+            </td></tr><tr><td><a href="2015b54d-b8b5-d61e-1abb-abc584df1789.htm">GetCurrentPrecision</a></td><td> </td></tr><tr><td><a href="c06e6be4-cac3-a492-9c34-2c5a436358ea.htm">GetCurrentRotation</a></td><td>
+            Returns a Rotation representation of the Robot's TCP orientation in quaternions.
+            </td></tr><tr><td><a href="e9cd6727-b21b-2fb5-2275-9e8f069f1b9a.htm">GetCurrentSpeed</a></td><td> </td></tr><tr><td><a href="ecd11d9c-3e50-99ca-4be2-d5116dcd7c44.htm">GetCurrentTool</a></td><td>
+            Returns the Tool object currently attached to this Robot, null if none.
+            </td></tr><tr><td><a href="076541d1-e92f-3234-6e81-371d6287a770.htm">GetDeviceDriverModules</a></td><td>
+            Returns the module files necessary to load on the device for a successful connection.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="eea9697f-00ab-51ee-d90f-8f9b7fce247e.htm">GetIP</a></td><td>
+            Returns a string representation of the IP of the currently connected robot device.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="ec0baeb5-6dec-4bbc-36e7-9a3bee42d5af.htm">Initialize</a></td><td>
+            Initialize this device for action. Initialization uses device-specific
+            common initialization routines, like homing and calibration, to set the 
+            device ready for typical procedures like 3D printing. 
+            </td></tr><tr><td><a href="ae5b821e-b5e0-c7b0-ad36-163780b915d5.htm">IsBrand(RobotType)</a></td><td> </td></tr><tr><td><a href="1c3f0143-39c6-30f0-4fda-c6324ad56926.htm">IsBrand(String)</a></td><td> </td></tr><tr><td><a href="d1c22911-6eb4-38e8-9d84-15c05c0b0b15.htm">Issue</a></td><td>
+            Issues an Action object to this robot. This is useful when a list of Actions
+            is already available, and needs to be applied to this Robot.
+            </td></tr><tr><td><a href="46bc198c-20eb-6ece-921c-9d32f782e7dc.htm">LoadReflectedAPI</a></td><td>
+            Used to load all methods from the API that can be parseable from a string, using reflection. 
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="706eff40-5a06-fbfd-edf9-171941385f0a.htm">Message</a></td><td>
+            Send a string message to the device, to be displayed based on device's capacities.
+            </td></tr><tr><td><a href="7a07068d-962c-3766-dc64-5d164fc3b5ae.htm">MotionMode(MotionType)</a></td><td>
+            Sets the motion type (linear, joint...) for future issued Actions.
+            </td></tr><tr><td><a href="33fc3a1a-0126-5aae-bdd0-8e1557984db9.htm">MotionMode(String)</a></td><td>
+            Sets the motion type (linear, joint...) for future issued Actions.
+            </td></tr><tr><td><a href="480a6f81-de68-59b2-4b4a-8cdb68cd42d0.htm">Move(Vector)</a></td><td>
+            Issue a relative movement action request on current coordinate system.
+            </td></tr><tr><td><a href="0a8893fa-f579-79be-864d-e71bd08a8112.htm">Move(Double, Double, Double)</a></td><td>
+            Issue a relative movement action request on current coordinate system.
+            </td></tr><tr><td><a href="98745395-810b-6032-fde3-f09392000726.htm">MoveTo(Point)</a></td><td>
+            Issue an absolute movement action request.
+            </td></tr><tr><td><a href="8d4544f1-9ae1-4f99-3cb5-fd5d2c0fa1d6.htm">MoveTo(Double, Double, Double)</a></td><td>
+            Issue an absolute movement action request.
+            </td></tr><tr><td><a href="245d8da3-6d78-7ada-4723-8a724bef51f0.htm">OnActionExecuted</a></td><td> </td></tr><tr><td><a href="2c819f94-dc5e-d9d7-89ae-f413f118ac77.htm">OnActionIssued</a></td><td> </td></tr><tr><td><a href="12bce623-786a-c2fc-b1ef-069ac6a71a5b.htm">OnActionReleased</a></td><td> </td></tr><tr><td><a href="82b9b8a0-8b2e-39a1-e69f-e1480a70662d.htm">OnMotionUpdate</a></td><td> </td></tr><tr><td><a href="50250830-5322-7a9c-592e-52ffccbaafc5.htm">PopSettings</a></td><td>
+            Reverts the state settings (speed, precision, motion type...) to the previously buffered
+            state by PushSettings().
+            </td></tr><tr><td><a href="0528e2ee-018e-60a9-eb35-f4ecb2f115c5.htm">Precision</a></td><td>
+            Increase the default precision value new Actions will be given. 
+            Precision is measured as the radius of the smooth interpolation
+            between motion targets. This is refered to as "Zone", "Approximate
+            Positioning" or "Blending Radius" in different platforms. 
+            </td></tr><tr><td><a href="7e126d06-5569-b8fa-5f95-4371e4fa69bc.htm">PrecisionTo</a></td><td>
+            Set the default precision value new Actions will be given. 
+            Precision is measured as the radius of the smooth interpolation
+            between motion targets. This is refered to as "Zone", "Approximate
+            Positioning" or "Blending Radius" in different platforms. 
+            </td></tr><tr><td><a href="4e39b063-c48d-51c0-461c-d89934d05cae.htm">PushSettings</a></td><td>
+            Buffers current state settings (speed, precision, motion type...), and opens up for 
+            temporary settings changes to be reverted by PopSettings().
+            </td></tr><tr><td><a href="90cb9854-ee8e-5fc1-7642-36228fb00e71.htm">Rotate(Rotation)</a></td><td>
+            Issue a RELATIVE rotation action request according to the current reference system.
+            </td></tr><tr><td><a href="d1553ea5-b68e-9d1e-75b4-0d6ea1644210.htm">Rotate(Vector, Double)</a></td><td>
+            Issue a RELATIVE rotation action request according to the current reference system.
+            </td></tr><tr><td><a href="1c55f054-b18c-6883-520a-c2f74b48694a.htm">Rotate(Double, Double, Double, Double)</a></td><td>
+            Issue a RELATIVE rotation action request according to the current reference system.
+            </td></tr><tr><td><a href="6d0424f3-73a0-a482-dbcc-1c76656ba25d.htm">RotateTo(Orientation)</a></td><td>
+            Issue an ABSOLUTE reorientation request according to the current reference system.
+            </td></tr><tr><td><a href="16b5403a-53e7-6733-153f-cfa0cf2e8673.htm">RotateTo(Rotation)</a></td><td>
+            Issue an ABSOLUTE reorientation request according to the current reference system.
+            </td></tr><tr><td><a href="569dc8d0-e2eb-1dee-27e8-70875931f420.htm">RotateTo(Vector, Vector)</a></td><td>
+            Issue an ABSOLUTE reorientation request according to the current reference system.
+            </td></tr><tr><td><a href="4123083c-fff2-37d9-df94-aed19eead0ea.htm">RotateTo(Double, Double, Double, Double, Double, Double)</a></td><td>
+            Issue an ABSOLUTE reorientation request according to the current reference system.
+            </td></tr><tr><td><a href="2dc3a399-02b5-b863-db8e-a693dd6b7431.htm">SaveProgram</a></td><td>
+            Saves a RobotProgram to a folder in the system, generating all the required files and extensions.
+            </td></tr><tr><td><a href="46d5d3cb-7532-2bcd-1d46-624d9f3dfc30.htm">SetUser</a></td><td>
+            If the controller needs special user logging, set the credentials here. 
+            </td></tr><tr><td><a href="06205bc3-d8c9-c306-a175-e79b34b13535.htm">Speed</a></td><td>
+            Increase the speed at which new Actions will be executed. This value will be applied to linear motion in mm/s, and rotational or angular motion in deg/s.
+            </td></tr><tr><td><a href="a6c5dcf2-bb5b-2a3b-3441-62417d01d9ed.htm">SpeedTo</a></td><td>
+            Set the speed at which new Actions will be executed. This value will be applied to linear motion in mm/s, and rotational or angular motion in deg/s.
+            </td></tr><tr><td><a href="a3005060-8044-1fac-1eab-522e3be86670.htm">StreamConfiguration</a></td><td>
+            Configure how Actions are streamed to the controller.
+            </td></tr><tr><td><a href="d4298a75-afa9-7a4c-3e21-9acc754e24ad.htm">Temperature</a></td><td>
+            Increments the working temperature of one of the device's parts. Useful for 3D printing operations. 
+            </td></tr><tr><td><a href="0afe3867-eb26-7f5a-9c8d-a4f76271fcec.htm">TemperatureTo</a></td><td>
+            Sets the working temperature of one of the device's parts. Useful for 3D printing operations. 
+            </td></tr><tr><td><a href="a203ce97-611b-750b-bcca-c408454289e0.htm">Terminate</a></td><td>
+            Terminate this device. Termination uses device-specific
+            common termination routines, like cooling or turning fans off, to prepare
+            the device for idleness.
+            </td></tr><tr><td><a href="a313ccdf-0942-e0f0-3e70-72e8e06941c9.htm">ToString</a></td><td><br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">Object<span id="LST52912447_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ToString<span id="LST52912447_2" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="7f2342ec-65ef-ba11-9f43-2e8bd61fe1ef.htm">Transform(Rotation, Vector)</a></td><td>
+            Issue a compound RELATIVE local Rotation + Translation request
+            according to the current reference system.
+            Note that, if using local coordinates, order of Actions will matter. 
+            TODO: wouldn't they matter too if they were in global coordinates?
+            TODO II: should this be changed to simply mean a sort of plane to plane transform? 
+            Such change would make this more intuitive...
+            </td></tr><tr><td><a href="87c236b2-7d75-04e7-0180-f950413896f8.htm">Transform(Vector, Rotation)</a></td><td>
+            Issue a compound RELATIVE local Translation + Rotation request
+            according to the current reference system.
+            Note that, if using local coordinates, order of Actions will matter. 
+            TODO: wouldn't they matter too if they were in global coordinates?
+            TODO II: should this be changed to simply mean a sort of plane to plane transform? 
+            Such change would make this more intuitive...
+            </td></tr><tr><td><a href="bd7e188d-40ce-7c27-fa80-756c4bb189a3.htm">TransformTo(Orientation, Point)</a></td><td>
+            Issue a compound ABSOLUTE global Translation + Rotation request
+            according to the current reference system.
+            </td></tr><tr><td><a href="40a53750-db9e-4ec7-3af2-aaca5c4a158b.htm">TransformTo(Point, Orientation)</a></td><td>
+            Issue a compound ABSOLUTE global Translation + Rotation request
+            according to the current reference system.
+            </td></tr><tr><td><a href="77a7bac2-b72f-dc3d-3a70-0610837fcb17.htm">TransformTo(Double, Double, Double, Double, Double, Double, Double, Double, Double)</a></td><td>
+            Issue a compound ABSOLUTE global Translation + Rotation request
+            according to the current reference system.
+            </td></tr><tr><td><a href="8ca37e00-6c8e-e7d8-1bf0-8e79e486fced.htm">Wait</a></td><td>
+            Issue a request to wait idle before moving to next action. 
+            </td></tr><tr><td><a href="691ee6d1-448b-1ae9-40c7-936b80bb3897.htm">WriteAnalog(Int32, Double, Boolean)</a></td><td>
+            Writes to the analog IO pin.
+            </td></tr><tr><td><a href="87b920ac-a06d-a49e-16a6-766ff1425e2f.htm">WriteAnalog(String, Double, Boolean)</a></td><td>
+            Writes to the analog IO pin.
+            </td></tr><tr><td><a href="88aa66a5-218a-ed7b-0af5-e06c20df2d86.htm">WriteDigital(Int32, Boolean, Boolean)</a></td><td>
+            Writes to the digital IO pin.
+            </td></tr><tr><td><a href="5eb1ebb9-5959-9337-2d5b-75644b8c8b41.htm">WriteDigital(String, Boolean, Boolean)</a></td><td>
+            Writes to the digital IO pin.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Events</h2><div id="IDAEASection"><table id="EventList" class="table is-hoverable"><tr><td><a href="2b16d992-e1f6-1241-cccd-f304bc42d4b6.htm">ActionExecuted</a></td><td>
+            Will be raised whenever an Action has completed execution on the device. 
+            </td></tr><tr><td><a href="ccde7e50-fa5e-9816-bbb7-e3435a127830.htm">ActionIssued</a></td><td>
+            Will be raised whenever an Action has been successfully issued and is scheduled for release to the device or compilation. 
+            </td></tr><tr><td><a href="71d64448-bea0-cfa9-ede8-36d4377dc6ce.htm">ActionReleased</a></td><td>
+            Will be raised whenever an Action has been released to the device and is scheduled for execution.
+            </td></tr><tr><td><a href="a08711bb-842f-a209-3040-797f90a246d7.htm">MotionUpdate</a></td><td>
+            Will be raised whenever new information is available about the real-time information about the state of the device.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Fields</h2><div id="IDEEASection"><table id="FieldList" class="table is-hoverable"><tr><td><a href="e4cdd321-206d-d429-05cb-4ae44ee2d053.htm">_reflectedAPI</a></td><td>
+            A (Name, MethodInfo) dict of reflected methods from the main Robot class, 
+            that can be invoked from parsed strings from primitive values. 
+            Such methods are flagged with attributes, and loaded at runtime. 
+            </td></tr><tr><td><a href="095f02cb-da8f-36a1-0965-60fa5907e9d8.htm">_reflectedAPICaseInsensitive</a></td><td>
+            A (Name, MethodInfo) dict of CASE-INSENSITIVE reflected methods from the main Robot class, 
+            that can be invoked from parsed strings from primitive values. 
+            Such methods are flagged with attributes, and loaded at runtime. 
+            </td></tr><tr><td><a href="0c55a346-c7ed-81d3-4d8e-6ab45903ad47.htm">Build</a></td><td>
+            Build number.
+            </td></tr><tr><td><a href="f28d7003-45d5-7479-e60c-25d179ad68ae.htm">logger</a></td><td>
+            An internal logging class to be used by children objects to log messages from this Robot.
+            </td></tr><tr><td><a href="a50cd76c-601c-a763-4285-cb4c7f28d819.htm">Version</a></td><td>
+            Version number.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="d060485c-ae14-71b2-40f1-47eded9ebe2c.htm">Machina Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Properties</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">Events</a></li><li><a class="quickLink">Fields</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>
